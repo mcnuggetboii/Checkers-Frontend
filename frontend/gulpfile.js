@@ -1,4 +1,4 @@
-const { src, dest, series, parallel } = require('gulp');
+const { src, dest, series } = require('gulp');
 const del = require('del');
 const fs   = require('fs');
 const zip = require('gulp-zip');
