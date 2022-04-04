@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "vitest --dom",
+    "test": "vitest run --dom",
+    "watch": "vitest --dom",
     "coverage": "vitest --coverage"
   },
   "dependencies": {

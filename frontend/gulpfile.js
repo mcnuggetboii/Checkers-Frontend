@@ -17,6 +17,24 @@ function clean()  {
   return del('../frontend-build/**', {force:true});
 }
 
+function buildVueCodeTask(cb) {
+  log('building Vue code into the directory')
+  return exec('cd ../frontend && npm run build', function (err, stdout, stderr) {
+    log(stdout);
+    log(stderr);
+    cb(err);
+  })
+}
+
+function doTest(cb) {
+  log('testing Vue code')
+  return exec('npm run test', function(err, stdout, stderr) {
+    log(stdout);
+    log(stderr);
+    cb(err);
+  })
+}
+
 function createProdBuildFolder() {
 
   const dir = paths.prod_build;
@@ -27,15 +45,6 @@ function createProdBuildFolder() {
   }
 
   return Promise.resolve('the value is ignored');
-}
-
-function buildVueCodeTask(cb) {
-  log('building Vue code into the directory')
-  return exec('cd ../frontend && npm run build', function (err, stdout, stderr) {
-    log(stdout);
-    log(stderr);
-    cb(err);
-  })
 }
 
 function copyVueCodeTask() {
@@ -58,8 +67,9 @@ function deleteDistBuildFolder() {
 
 exports.default = series(
   clean,
-  createProdBuildFolder,
   buildVueCodeTask,
+  doTest,
+  createProdBuildFolder,
   copyVueCodeTask,
   zippingTask,
   deleteDistBuildFolder
