@@ -12,7 +12,7 @@ const paths = {
   zipped_file_name: "frontend-nodejs.zip",
 };
 
-function clean() {
+function cleanPreviousBuild() {
   log("removing the old files in the directory");
   return del("../frontend-build/**", { force: true });
 }
@@ -38,6 +38,15 @@ function buildVueCodeTask(cb) {
 function doTest(cb) {
   log("testing Vue code");
   return exec("npm run test", function (err, stdout, stderr) {
+    log(stdout);
+    log(stderr);
+    cb(err);
+  });
+}
+
+function testQualityAssurance(cb) {
+  log("testing with coverage");
+  return exec("npm run coverage", function (err, stdout, stderr) {
     log(stdout);
     log(stderr);
     cb(err);
@@ -73,10 +82,11 @@ function deleteDistBuildFolder() {
 }
 
 exports.default = series(
-  clean,
+  cleanPreviousBuild,
   qualityAssurance,
   buildVueCodeTask,
   doTest,
+  testQualityAssurance,
   createProdBuildFolder,
   copyVueCodeTask,
   zippingTask,

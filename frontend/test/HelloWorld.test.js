@@ -13,8 +13,8 @@ describe('HelloWorld Component Test', ()=> {
                 msg: "Hello from Luca"
             },
         })
+        
         expect(wrapper.text()).toContain('Hello from Luca')
-
         expect(wrapper.find('h3').exists()).toBeTruthy()
     })
 })
