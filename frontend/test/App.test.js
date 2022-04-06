@@ -1,5 +1,5 @@
 /**
- * @vitest-enviroment happy-dom
+ * @vitest-enviroment
  */
 
 import { describe, it, expect } from 'vitest'
