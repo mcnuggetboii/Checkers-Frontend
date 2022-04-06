@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="main" class="flex flex-row min-h-screen min-w-screen">
-      <SideBar class="sidebar h-max" />
+      <SideBar class="sidebar h-screen" />
       <div class="middle w-screen min-w-fit h-screen">
         <router-view />
       </div>
