@@ -83,6 +83,7 @@
         >
       </li>
     </ul>
+    <button class="btn">CLICK ME</button>
   </div>
 </template>
 
