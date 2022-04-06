@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import HomeView from "../views/Home.vue";
+import Error404 from "@/views/ErrorView.vue";
 
 const routes = [
   {
@@ -16,6 +17,11 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ "../views/AboutView.vue");
     },
+  },
+  {
+    path: "/404",
+    name: "error404",
+    component: Error404,
   },
 ];
 
