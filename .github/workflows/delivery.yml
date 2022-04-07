@@ -1,6 +1,6 @@
 # Automatic Versioning and Delivery
 
-name: DependaBotMerge
+name: Delivery
 
 on:
   push:
