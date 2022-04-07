@@ -3,15 +3,13 @@
 name: DependaBotMerge
 
 on:
-  pull_request:
+  pull_request_target:
 
 jobs:
   dependabot-merge:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          github-token: ${{secrets.AUTOMERGE_TOKEN}}
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          github-token: ${{secrets.AUTOMERGE_TOKEN}}
+          github-token: ${{secrets.GITHUB_TOKEN}}
