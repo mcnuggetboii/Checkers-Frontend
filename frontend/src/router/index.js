@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/Home.vue";
-import Error404 from "@/views/ErrorView.vue";
+import Error404 from "../views/ErrorView.vue";
 
 const routes = [
   {

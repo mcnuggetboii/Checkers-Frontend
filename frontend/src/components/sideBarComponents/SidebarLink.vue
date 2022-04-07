@@ -16,8 +16,8 @@ import { useRoute } from "vue-router";
 
 export default {
   props: {
-    to: { type: String, required: true },
-    icon: { type: String, required: true },
+    to: { type: String, required: true, default: "" },
+    icon: { type: String, required: true, default: "" },
     click: { type: String, required: false, default: "" },
   },
   setup(props) {

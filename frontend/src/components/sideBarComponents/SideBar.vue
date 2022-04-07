@@ -4,61 +4,61 @@
     <div class="sidebar flex flex-col">
       <router-link to="/">
         <img
-          src="@/assets/logo.png"
+          src="../../assets/logo.png"
           class="mask w-40 h-40 my-5 ml-5 mask-squircle"
         />
       </router-link>
 
       <div class="dropdown mt-5">
-        <SidebarLink
+        <SideBarLink
           class="barMenu pl-1.5"
           to=""
           icon="fas fa-bars"
-        ></SidebarLink>
+        ></SideBarLink>
         <ul
           tabindex="0"
           class="block p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52"
         >
           <li class="inline-block">
-            <SidebarLink
+            <SideBarLink
               class="w-44 profile-drop mb-3 pl-0.5"
               to="/profile"
               icon="fas fa-user-cog"
-              >Profile</SidebarLink
+              >Profile</SideBarLink
             >
           </li>
           <li class="inline-block">
-            <SidebarLink
+            <SideBarLink
               class="leaderboard-drop w-44 mb-3 pl-0.5"
               to="/leaderboard"
               icon="fas fa-chart-bar"
-              >Leaderboard</SidebarLink
+              >Leaderboard</SideBarLink
             >
           </li>
         </ul>
       </div>
-      <SidebarLink class="w-44 home mb-3 pl-0.5" to="/" icon="fas fa-home"
-        >Home</SidebarLink
+      <SideBarLink class="w-44 home mb-3 pl-0.5" to="/" icon="fas fa-home"
+        >Home</SideBarLink
       >
-      <SidebarLink
+      <SideBarLink
         class="w-44 profile mb-3 pl-0.5"
         to="/profile"
         icon="fas fa-user-cog"
-        >Profile</SidebarLink
+        >Profile</SideBarLink
       >
-      <SidebarLink
+      <SideBarLink
         class="leaderboard w-44 mb-3 pl-0.5"
         to="/leaderboard"
         icon="fas fa-chart-bar"
-        >Leaderboard</SidebarLink
+        >Leaderboard</SideBarLink
       >
 
       <!--<div v-if="!$store.loading.value">-->
-      <SidebarLink
+      <SideBarLink
         class="w-44 login mt-96 p-0.5"
         to="/login"
         icon="fas fa-user-lock"
-        >Sign in</SidebarLink
+        >Sign in</SideBarLink
       >
       <!--</div>-->
     </div>
@@ -66,12 +66,12 @@
 </template>
 
 <script>
-import SidebarLink from "./SidebarLink";
+import SideBarLink from "./SideBarLink.vue";
 
 export default {
   name: "SideBar",
   components: {
-    SidebarLink,
+    SideBarLink,
   },
 };
 </script>
