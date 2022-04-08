@@ -77,7 +77,9 @@
           </div>
 
           <div class="object-center space-x-2 mb-3 mt-10">
-            <label class="text-base font-semibold btn">Sign up</label>
+            <label class="signup-btn text-base font-semibold btn"
+              >Sign up</label
+            >
             <div class="signup-modal modal modal-close">
               <div class="modal-box">
                 <p class="text-base font-semibold msg">Ciao</p>

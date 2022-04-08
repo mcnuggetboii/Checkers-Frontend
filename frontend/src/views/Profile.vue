@@ -18,9 +18,12 @@
         <div class="flex flex-row ml-2 font-semibold text-xl">
           <p>Stars</p>
           <i class="fas fa-star ml-1 mt-1" />
-          <p :innerText="stars" class="ml-3"></p>
+          <p :innerText="stars" class="stars ml-3"></p>
         </div>
-        <p :innerText="first_last_name" class="text-xl text-left ml-2 mt-2">
+        <p
+          :innerText="first_last_name"
+          class="first_last text-xl text-left ml-2 mt-2"
+        >
           FirstName LastName
         </p>
       </div>
