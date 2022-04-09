@@ -4,8 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "postinstall": "(cd backend/communicationService && npm i); (cd backend/gameService && npm i); (cd Backend/userService && npm i); (cd frontend && npm i && npm run build);",
-      "deploy": "(cd backend/communicationService && node \"index.js\" &); (cd backend/gameService && node \"index.js\" &); (cd Backend/userService && node \"index.js\")"
+      "postinstall": "cd frontend && npm i && npm run build"
     },
     "keywords": [],
     "author": "",
