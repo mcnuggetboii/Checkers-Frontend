@@ -31,7 +31,7 @@
           </div>
 
           <div class="object-center space-x-2 mt-10">
-            <label class="btn text-base font-semibold">Sign in</label>
+            <label class="btn login-btn text-base font-semibold">Sign in</label>
             <div class="login-fail modal">
               <div class="modal-box">
                 <p class="msg text-base font-semibold">Ciao</p>
