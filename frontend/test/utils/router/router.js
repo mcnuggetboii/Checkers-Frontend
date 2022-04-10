@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Error404 from "../../../src/views/ErrorView.vue";
 import HomeView from "../../../src/views/Home.vue";
 import LeaderBoard from "../../../src/views/LeaderBoard.vue";
+import Lobbies from "../../../src/views/Lobbies.vue";
 import LogIn from "../../../src/views/LogIn.vue";
 import Profile from "../../../src/views/Profile.vue";
 import SignUp from "../../../src/views/SignUp.vue";
@@ -36,6 +37,11 @@ const routes = [
     path: "/profile",
     name: "Profile",
     component: Profile,
+  },
+  {
+    path: "/lobbies",
+    name: "Lobbies",
+    component: Lobbies,
   },
 ];
 
