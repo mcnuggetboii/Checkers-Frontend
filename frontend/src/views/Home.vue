@@ -120,7 +120,7 @@
         <figure>
           <img
             alt="Modal Logo Image"
-            src="@/assets/logo.png"
+            src="../assets/logo.png"
             class="checkers-img self-center mask w-20 h-20 mask-square"
           />
         </figure>
@@ -236,6 +236,11 @@
 <script>
 export default {
   name: "HomeView",
+  methods: {
+    lobbyOpened() {
+      this.$router.push("/lobbies");
+    },
+  },
 };
 </script>
 

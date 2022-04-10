@@ -5,6 +5,7 @@ import LeaderBoard from "../views/LeaderBoard";
 import LogIn from "../views/LogIn";
 import Profile from "../views/Profile";
 import SignUp from "../views/SignUp";
+import Lobbies from "../views/Lobbies";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/profile",
     name: "Profile",
     component: Profile,
+  },
+  {
+    path: "/lobbies",
+    name: "Lobbies",
+    component: Lobbies,
   },
 ];
 
