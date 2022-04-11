@@ -3,7 +3,7 @@
 name: DependaBotMerge
 
 on:
-  pull_request:
+  pull_request
 
 jobs:
   dependabot-merge:
