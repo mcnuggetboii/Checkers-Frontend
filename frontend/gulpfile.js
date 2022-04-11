@@ -13,7 +13,6 @@ const paths = {
 };
 
 function cleanPreviousBuild() {
-  //just a commment
   log("removing the old files in the directory");
   return del("../frontend-build/**", { force: true });
 }
