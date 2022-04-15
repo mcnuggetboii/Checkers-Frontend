@@ -14,7 +14,7 @@
       "watchcoverage": "vitest --environment jsdom --coverage"
     },
     "dependencies": {
-      "core-js": "^3.8.3",
+      "core-js": "^3.22.0",
       "daisyui": "^2.13.4",
       "vue": "^3.2.32",
       "vue-router": "^4.0.3",
