@@ -42,7 +42,7 @@
       "gulp": "^4.0.2",
       "gulp-zip": "^5.0.2",
       "jsdom": "^19.0.0",
-      "nodemon": "^2.0.4",
+      "nodemon": "^2.0.16",
       "postcss": "^8.4.13",
       "postcss-focus": "^5.0.1",
       "postcss-loader": "^6.2.1",
