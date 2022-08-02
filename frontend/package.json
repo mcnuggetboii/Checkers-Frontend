@@ -33,7 +33,7 @@
       "@vue/test-utils": "^2.0.2",
       "c8": "^7.11.3",
       "del": "^6.1.1",
-      "eslint": "^8.20.0",
+      "eslint": "^8.21.0",
       "eslint-config-prettier": "^8.3.0",
       "eslint-plugin-prettier": "^4.2.1",
       "eslint-plugin-vue": "^8.7.1",
@@ -48,7 +48,7 @@
       "postcss-loader": "^6.2.1",
       "prettier": "^2.7.1",
       "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
-      "vitest": "^0.18.1"
+      "vitest": "^0.20.2"
     },
     "resolutions": {
       "glob-parent": "^6.0.2",
